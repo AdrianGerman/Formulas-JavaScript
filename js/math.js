@@ -45,3 +45,32 @@ console.log({
 });
 
 console.groupEnd("Triangulo");
+
+console.group("Circulo");
+
+const radioCirculo = 3;
+const diametroCirculo = radioCirculo * 2;
+// No se esta usando, la libreria math nos da un PI por defecto
+const PI = 3.14159265;
+
+const circunferencia = diametroCirculo * Math.PI;
+const areaCirculo = radioCirculo ** 2 * Math.PI;
+
+console.log({
+  radioCirculo,
+  diametroCirculo,
+  PI,
+  circunferencia,
+  areaCirculo,
+});
+
+function calcularCirculo(radio) {
+  const diametro = radio * 2;
+  const radioAlCuadrado = Math.pow(radio, 2);
+  return {
+    circunferencia: radio * 2 * Math.PI,
+    area: radioAlCuadrado * Math.PI,
+  };
+}
+
+console.groupEnd("Circulo");
