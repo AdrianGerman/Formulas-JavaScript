@@ -35,6 +35,15 @@ function calcularTriangulo(lado1, lado2, base, altura) {
   };
 }
 
+function calcularAlturaTriangulo(lados, base) {
+  if (lados == base) {
+    console.warn("Este no es un triángulo isósceles");
+  } else {
+    // Math.sqrt() = Es para calcular la raíz cuadrada en js
+    return Math.sqrt(lados ** 2 - base ** 2 / 4);
+  }
+}
+
 console.log({
   ladoTriangulo1,
   ladoTriangulo2,
