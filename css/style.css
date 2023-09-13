@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alef&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+
+body {
+  background-image: url(../img/fondo.jpg);
+  color: white;
+}
+
+.lasp {
+  font-family: "Vidaloka", serif;
+  background-color: #2b2e3d;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.title_h1 {
+  font-size: 100px;
+  font-family: "Lobster Two", cursive;
+  text-align: center;
+  margin: 0;
+}
+.p1 {
+  font-size: 50px;
+  margin-left: 9pc;
+  margin-top: 0%;
+}
+
+.p2 {
+  font-size: 30px;
+  margin-left: 9pc;
+  margin-top: -1%;
+}
+
+.p3 {
+  font-size: 25px;
+  margin-left: 9pc;
+  margin-top: 0%;
+}
+
+.listita ul {
+  font-family: "Alef", sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 10px;
+  background-color: #2b2e3d;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.listita ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn_text {
+  width: 150px;
+  height: 50px;
+  border: none;
+  background-color: #363d4f;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn_text:hover {
+  background-color: #75809a;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 99%;
+  height: 40px;
+  color: white;
+}
+.text-footer {
+  text-align: center;
+  font-family: "Source Code Pro", monospace;
+}
