@@ -1,4 +1,6 @@
-function esPar(lista) {
+const StatisticsMath = {};
+
+StatisticsMath.esPar = function esPar(lista) {
   //   if (lista.length % 2) {
   //     return false;
   //   } else {
@@ -6,13 +8,13 @@ function esPar(lista) {
   //   }
   // Funciona igual que el return
   return !(lista.length % 2);
-}
+};
 
-function esImpar(lista) {
+StatisticsMath.esImpar = function esImpar(lista) {
   return lista.length % 2;
-}
+};
 
-function calcularModa(lista) {
+StatisticsMath.calcularModa = function calcularModa(lista) {
   const listaCount = {};
 
   for (let i = 0; i < lista.length; i++) {
@@ -42,9 +44,9 @@ function calcularModa(lista) {
   // );
   const moda = listaMaxNumber[0];
   return moda;
-}
+};
 
-function calcularMediana(listaDesordenada) {
+StatisticsMath.calcularMediana = function calcularMediana(listaDesordenada) {
   const lista = ordenarLista(listaDesordenada);
   const listaEsPar = esPar(lista);
 
@@ -69,9 +71,9 @@ function calcularMediana(listaDesordenada) {
     console.log(medianaListaImpar);
     return medianaListaImpar;
   }
-}
+};
 
-function calcularPromedio(lista) {
+StatisticsMath.calcularPromedio = function calcularPromedio(lista) {
   //   let sumaLista = 0;
   //   for (let i = 0; i < lista.length; i++) {
   //     sumaLista = sumaLista + lista[i];
@@ -85,9 +87,9 @@ function calcularPromedio(lista) {
   const promedio = sumaLista / lista.length;
   console.log(promedio);
   return promedio;
-}
+};
 
-function ordenarLista(listaDesordenada) {
+StatisticsMath.ordenarLista = function ordenarLista(listaDesordenada) {
   function ordernarListaSort(valorAcumulado, nuevoValor) {
     // if (valorAcumulado > nuevoValor) {
     //   return 1;
@@ -100,12 +102,13 @@ function ordenarLista(listaDesordenada) {
   }
   const lista = listaDesordenada.sort(ordernarListaSort);
   return lista;
-}
+};
 
-function ordenarListaBidimensional(listaDesordenada, i) {
+StatisticsMath.ordenarListaBidimensional = function ordenarListaBidimensional(
+  listaDesordenada, i) {
   function ordernarListaSort(valorAcumulado, nuevoValor) {
     return valorAcumulado[i] - nuevoValor[i];
   }
   const lista = listaDesordenada.sort(ordernarListaSort);
   return lista;
-}
+};
