@@ -92,3 +92,26 @@ function proyeccionPorEmpresa(nombre) {
     return nuevoMediana;
   }
 }
+
+function medianaGeneral() {
+  const listaMedianas = salarios.map((persona) =>
+    medianaPorPersona(persona.name)
+  );
+  const mediana = StatisticsMath.calcularMediana(listaMedianas);
+  return mediana;
+}
+
+function medianaTop10() {
+  const listaMedianas = salarios.map((persona) =>
+    medianaPorPersona(persona.name)
+  );
+  const medianasOrdenadas = StatisticsMath.ordenarLista(listaMedianas);
+
+  const cantidad = listaMedianas.length / 10;
+  const limite = listaMedianas.length - cantidad;
+
+  const top10 = medianasOrdenadas.slice(limite, medianasOrdenadas.length);
+
+  const medianaTop10 = StatisticsMath.calcularMediana(top10);
+  return medianaTop10;
+}

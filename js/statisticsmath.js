@@ -55,7 +55,7 @@ StatisticsMath.calcularPromedio = function calcularPromedio(lista) {
   }
   const sumaLista = lista.reduce(sumarTodosElementos);
   const promedio = sumaLista / lista.length;
-  console.log(promedio);
+  // console.log(promedio);
   return promedio;
 };
 
