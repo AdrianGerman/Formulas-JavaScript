@@ -1,6 +1,4 @@
-const StatisticsMath = {};
-
-StatisticsMath.esPar = function esPar(lista) {
+function esPar(lista) {
   //   if (lista.length % 2) {
   //     return false;
   //   } else {
@@ -10,11 +8,11 @@ StatisticsMath.esPar = function esPar(lista) {
   return !(lista.length % 2);
 };
 
-StatisticsMath.esImpar = function esImpar(lista) {
+function esImpar(lista) {
   return lista.length % 2;
 };
 
-StatisticsMath.calcularModa = function calcularModa(lista) {
+function calcularModa(lista) {
   const listaCount = {};
 
   for (let i = 0; i < lista.length; i++) {
@@ -46,7 +44,7 @@ StatisticsMath.calcularModa = function calcularModa(lista) {
   return moda;
 };
 
-StatisticsMath.calcularMediana = function calcularMediana(listaDesordenada) {
+function calcularMediana(listaDesordenada) {
   const lista = ordenarLista(listaDesordenada);
   const listaEsPar = esPar(lista);
 
@@ -73,7 +71,7 @@ StatisticsMath.calcularMediana = function calcularMediana(listaDesordenada) {
   }
 };
 
-StatisticsMath.calcularPromedio = function calcularPromedio(lista) {
+function calcularPromedio(lista) {
   //   let sumaLista = 0;
   //   for (let i = 0; i < lista.length; i++) {
   //     sumaLista = sumaLista + lista[i];
@@ -89,7 +87,7 @@ StatisticsMath.calcularPromedio = function calcularPromedio(lista) {
   return promedio;
 };
 
-StatisticsMath.ordenarLista = function ordenarLista(listaDesordenada) {
+function ordenarLista(listaDesordenada) {
   function ordernarListaSort(valorAcumulado, nuevoValor) {
     // if (valorAcumulado > nuevoValor) {
     //   return 1;
@@ -104,7 +102,7 @@ StatisticsMath.ordenarLista = function ordenarLista(listaDesordenada) {
   return lista;
 };
 
-StatisticsMath.ordenarListaBidimensional = function ordenarListaBidimensional(
+function ordenarListaBidimensional(
   listaDesordenada, i) {
   function ordernarListaSort(valorAcumulado, nuevoValor) {
     return valorAcumulado[i] - nuevoValor[i];
