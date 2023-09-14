@@ -21,6 +21,7 @@ body {
   text-align: center;
   margin: 0;
 }
+
 .p1 {
   font-size: 50px;
   margin-left: 9pc;
@@ -48,6 +49,7 @@ body {
   background-color: #2b2e3d;
   border-radius: 10px;
   margin-right: 20px;
+  margin-left: 20px;
 }
 
 .listita ul li a {
@@ -63,7 +65,9 @@ body {
   color: white;
   border-radius: 10px;
   cursor: pointer;
+  font-family: "Alef", sans-serif;
 }
+
 .btn_text:hover {
   background-color: #75809a;
 }
@@ -75,6 +79,7 @@ footer {
   height: 40px;
   color: white;
 }
+
 .text-footer {
   text-align: center;
   font-family: "Source Code Pro", monospace;
